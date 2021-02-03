@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+
+
+public class exxception {
+     public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+        int a,b,c,s=0;
+        System.out.println("Enter the value of a: ");
+         a=sc.nextInt();
+         System.out.println("Enter the value of b: ");
+         b=sc.nextInt();
+         System.out.println("Enter the value of c: ");
+        c=sc.nextInt();
+        try{
+            s=a/(b-c);
+            System.out.println("s= "+s);
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println("Cannot divide by 0 ");
+        }
+        finally{
+            System.out.println("Process is complete");
+        }
+
+    }
+    
+}
